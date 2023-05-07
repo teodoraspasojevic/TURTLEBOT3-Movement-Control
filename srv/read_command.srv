@@ -1,0 +1,8 @@
+string mode
+string linear_movement
+string rotational_movement
+float64 x_target
+float64 y_target
+float64 theta_target
+---
+bool response
