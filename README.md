@@ -1,11 +1,12 @@
 # TURTLEBOT3-Movement-Control
 Control of movement of TURTLEBOT3 robot in Gazebo simulation.
 
-Project description
+*Project description*
 
 We create node that uses Subcriber to read position of our robot TURTLEBOT3 in Gazebo simulation from his odometry sensor, reading from odom topic, and Publisher to move robot in simulation sending commands to read_command topic. In nodes, we call functions that generate commands we send to robot, depending of the selected mode of movement, that user selects from service.
 
-Instructions for running the scripts using ROS
+*Instructions for running the scripts using ROS*
+
 1. Run terminal on your Linux PC, and run command roscore.
 2. To run simulation, run commands export TURTLEBOT3_MODEL=burger and roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch.
 3. Use cd command to navigate to src directory of the project.
