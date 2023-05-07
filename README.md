@@ -3,7 +3,7 @@ Control of movement of TURTLEBOT3 robot in Gazebo simulation.
 
 Project description
 
-We create separate node for every action that is needed to be implemented: loading data in measurements node, processing data in processing node, displayment of data in display node and action node for signalization of specific occurrences in data. All nodes communicate through topics, and structure of topics and nodes used in the project is displayed in graph.png. We added an option of adding new data, and this functionality is realized using service add_new_values.
+We create node that uses Subcriber to read position of our robot TURTLEBOT3 in Gazebo simulation from his odometry sensor, reading from odom topic, and Publisher to move robot in simulation sending commands to cmnd topic. In nodes, we call functions that generate commands we send to robot, depending of the selected mode of movement, that user selects from service.
 
 Instructions for running the scripts using ROS
 1. Run terminal on your Linux PC, and run command roscore
